@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Plot in Nathan's favourite style (hint: There are options!).</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for ZI.plot {WormTools}"><tr><td>ZI.plot {WormTools}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Plot in Nathan's favourite style (hint: There are options!).</h2>
+
+<h3>Description</h3>
+
+<p>This function elegantly puts together a graph using ggplot. 
+Be sure ggplot2 and ggthemes are installed.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+ZI.plot(data, x, y, group, fill, colour = fill, facet_wrap = F,
+  facet = "", ylab = "y", xlab = "x", filling = "automatic",
+  colours, type = "Boxplot")
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>data</code></td>
+<td>
+<p>Here goes your data as a data-frame.</p>
+</td></tr>
+<tr valign="top"><td><code>x</code></td>
+<td>
+<p>x-values (format: either data$column or column)</p>
+</td></tr>
+<tr valign="top"><td><code>y</code></td>
+<td>
+<p>y-values (format: idem)</p>
+</td></tr>
+<tr valign="top"><td><code>group</code></td>
+<td>
+<p>How you'd like to group your variables.</p>
+</td></tr>
+<tr valign="top"><td><code>fill</code></td>
+<td>
+<p>How you'd like to fill the plots. Different from colour.</p>
+</td></tr>
+<tr valign="top"><td><code>colour</code></td>
+<td>
+<p>Default == fill. How you'd like to colour the outlines of your plotted elements (e.g. outline of boxes in the boxplot)</p>
+</td></tr>
+<tr valign="top"><td><code>facet_wrap</code></td>
+<td>
+<p>(T or F) Would you like to have several panels?</p>
+</td></tr>
+<tr valign="top"><td><code>facet</code></td>
+<td>
+<p>Optional: If you chose for several panels, here you indicate what the panels should include.</p>
+</td></tr>
+<tr valign="top"><td><code>ylab</code></td>
+<td>
+<p>Labels the y-axis</p>
+</td></tr>
+<tr valign="top"><td><code>xlab</code></td>
+<td>
+<p>Labels the x-axis</p>
+</td></tr>
+<tr valign="top"><td><code>filling</code></td>
+<td>
+<p>'manual' or 'automatic' (Default: automatic) How would you like to fill the plots? Manually or automatically?</p>
+</td></tr>
+<tr valign="top"><td><code>colours</code></td>
+<td>
+<p>If you opted filling = 'manual', provide a vector of the colours you'd like. This should have the same length as the number of objects you graph.</p>
+</td></tr>
+<tr valign="top"><td><code>type</code></td>
+<td>
+<p>'Boxplot' or 'violin' for now.</p>
+</td></tr>
+<tr valign="top"><td><code>colour</code></td>
+<td>
+<p>How you'd like to colour your</p>
+</td></tr>
+</table>
+
+
+<h3>Examples</h3>
+
+<pre>
+ZI.plot
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>WormTools</em> version 0.0.0.9000 <a href="00Index.html">Index</a>]</div>
+</body></html>

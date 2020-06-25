@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Loading the data from the microbeta machine.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for load.microbeta {WormTools}"><tr><td>load.microbeta {WormTools}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Loading the data from the microbeta machine.</h2>
+
+<h3>Description</h3>
+
+<p>This function loads your .csv file from the microbeta machine with an option to immediately read in the peptides from the plate layout file.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+load.microbeta(data, layout, nr.plates = 5, nr.series = 30,
+  matching = "automatic", filename = "microbeta.compiled.data.csv",
+  write.csv = T)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>data</code></td>
+<td>
+<p>The data from your receptor screen</p>
+</td></tr>
+<tr valign="top"><td><code>layout</code></td>
+<td>
+<p>Optional argument: The plate layout.</p>
+</td></tr>
+<tr valign="top"><td><code>nr.plates</code></td>
+<td>
+<p>The number of plates you screened.</p>
+</td></tr>
+<tr valign="top"><td><code>nr.series</code></td>
+<td>
+<p>The number of seconds in the peptide addition and triton addition measurements. Default: 30 (on microbeta)</p>
+</td></tr>
+<tr valign="top"><td><code>matching</code></td>
+<td>
+<p>== c('manual', 'automatic') Default: 'automatic' Optional argument  that by default loads in the plate layout as well. THIS CAN TAKE A WHILE.</p>
+</td></tr>
+<tr valign="top"><td><code>filename</code></td>
+<td>
+<p>The name you'd like to give to the .csv file that you'll write.</p>
+</td></tr>
+<tr valign="top"><td><code>write.csv</code></td>
+<td>
+<p>== c(T, F), Default: T. Optional argument to write a .csv file with your data.</p>
+</td></tr>
+</table>
+
+
+<h3>Examples</h3>
+
+<pre>
+load.microbeta
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>WormTools</em> version 0.0.0.9000 <a href="00Index.html">Index</a>]</div>
+</body></html>

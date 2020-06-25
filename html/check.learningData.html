@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Checking your learning data whether it worked or not.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for check.learningData {WormTools}"><tr><td>check.learningData {WormTools}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Checking your learning data whether it worked or not.</h2>
+
+<h3>Description</h3>
+
+<p>This function creates a data.frame in which you can check the quality of your learning assay.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+check.learningData(data, column, strain = "N2", learning.phenotype = T,
+  threshold = 0.7, learning.cutpoints = c(-1, (threshold - 0.2),
+  (threshold - 0.1), (threshold - 0.05), (threshold), 1),
+  non.learning.cutpoints = c(-1, (threshold - 0.15), (threshold),
+  (threshold + 0.1), (threshold + 0.2), 1))
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>data</code></td>
+<td>
+<p>Here goes your data, loaded by load.learningdata()</p>
+</td></tr>
+<tr valign="top"><td><code>column</code></td>
+<td>
+<p>data$column: Here goes the column you'd like to check: data$CI.</p>
+</td></tr>
+<tr valign="top"><td><code>strain</code></td>
+<td>
+<p>what strain would you like to check up on? Default: N2</p>
+</td></tr>
+<tr valign="top"><td><code>learning.phenotype</code></td>
+<td>
+<p>Is the strain learning (true) or shouldn't it be (false)? Default: True (learning)</p>
+</td></tr>
+<tr valign="top"><td><code>threshold</code></td>
+<td>
+<p>The threshold CI value for which the assay went well. For naive: CI &gt; threshold is good, whereas for conditioned CI &lt; threshold is better</p>
+</td></tr>
+<tr valign="top"><td><code>learning.cutpoints</code></td>
+<td>
+<p>The cutpoints you used to determine the significance of the learning phenotype</p>
+</td></tr>
+<tr valign="top"><td><code>nonlearning.cutpoints</code></td>
+<td>
+<p>The cutpoints you used to determine the significance of the non-learning phenotype</p>
+</td></tr>
+</table>
+
+
+<h3>Examples</h3>
+
+<pre>
+check.learningData
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>WormTools</em> version 0.0.0.9000 <a href="00Index.html">Index</a>]</div>
+</body></html>

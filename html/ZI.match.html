@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Matching two datafiles to eachother.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for ZI.match {WormTools}"><tr><td>ZI.match {WormTools}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Matching two datafiles to eachother.</h2>
+
+<h3>Description</h3>
+
+<p>If you have two datafiles with overlapping information, this function allows you to select the columns in which the identifier resides for both dataframes and produces a vector in which you put the values of either of the data.frame which you'd like to convert to the other data.frame. Therefore, this method also works if the nrow() differs for both data.frames.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+ZI.match(data1, data2, value, type = "numeric")
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>data1</code></td>
+<td>
+<p>A vector or data.frame column in which the identifier of data.frame 1 is.</p>
+</td></tr>
+<tr valign="top"><td><code>data2</code></td>
+<td>
+<p>A vector or data.frame column in which the identifier of data.frame 2 is.</p>
+</td></tr>
+<tr valign="top"><td><code>value</code></td>
+<td>
+<p>A vector or data.frame column in which you can find the values you'd like to return in an output vector.</p>
+</td></tr>
+<tr valign="top"><td><code>type</code></td>
+<td>
+<p>Default: numeric, other options: 'character', make sure to select the option character if it is a character.</p>
+</td></tr>
+</table>
+
+
+<h3>Examples</h3>
+
+<pre>
+ZI.match
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>WormTools</em> version 0.0.0.9000 <a href="00Index.html">Index</a>]</div>
+</body></html>

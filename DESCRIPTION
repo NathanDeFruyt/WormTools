@@ -1,0 +1,15 @@
+Package: WormTools
+Title: Compiled functions for my Master's Thesis (one line, title case)
+Version: 0.0.0.9000
+Authors@R: person("Nathan", "De Fruyt", email = "nathandefruyt@live.be", role = c("aut", "cre"))
+Description: This package includes several functions that can be used for functional biological tests performed in the ZI. Next to these (such as loading and compiling learningdata etc.), there are also some functions and objects of general use (e.g. set some value to zero when below a threshold value, calculate a z-score, match datasets to each other and an alphabet...).
+Depends: R (>= 3.5.3)
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-10-08 07:32:41 UTC; Anund
+Author: Nathan De Fruyt [aut, cre]
+Maintainer: Nathan De Fruyt <nathandefruyt@live.be>
+Built: R 3.6.1; ; 2019-10-08 07:32:43 UTC; windows

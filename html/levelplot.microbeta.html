@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Make a levelplot (i.e. a heatmap without clustering) for your...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for levelplot.microbeta {WormTools}"><tr><td>levelplot.microbeta {WormTools}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Make a levelplot (i.e. a heatmap without clustering) for your microbeta data</h2>
+
+<h3>Description</h3>
+
+<p>This function will allow you to plot your microbeta data to visually see whether you have potential hits.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+levelplot.microbeta(data, pool.plates = F, nr.plates = 5,
+  plate.type = 96, graph2ppt = F, graph.names = "Default",
+  path = getwd())
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>data</code></td>
+<td>
+<p>Data that were loaded using load.microbeta and subsequently summarised using process.microbeta.data()</p>
+</td></tr>
+<tr valign="top"><td><code>pool.plates</code></td>
+<td>
+<p>would you like to pool the plates in your assay? IF not, you'll get one plot as output, otherwise it produces a list of several plots.</p>
+</td></tr>
+<tr valign="top"><td><code>nr.plates</code></td>
+<td>
+<p>The number of plates you screened.</p>
+</td></tr>
+<tr valign="top"><td><code>plate.type</code></td>
+<td>
+<p>The type of plates you used (i.e. e.g. 96 wells)</p>
+</td></tr>
+<tr valign="top"><td><code>graph2ppt</code></td>
+<td>
+<p>Default: F; If T: writes a graph to the specified location in path</p>
+</td></tr>
+<tr valign="top"><td><code>path</code></td>
+<td>
+<p>If graph2ppt: where should the file go?</p>
+</td></tr>
+<tr valign="top"><td><code>file.names</code></td>
+<td>
+<p>Default: 'Levelplot Plate 1', 2, 3, ... If graph2ppt: how should you like to call your files?</p>
+</td></tr>
+</table>
+
+
+<h3>Examples</h3>
+
+<pre>
+levelplot.microbeta
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>WormTools</em> version 0.0.0.9000 <a href="00Index.html">Index</a>]</div>
+</body></html>

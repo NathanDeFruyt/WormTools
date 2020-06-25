@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Produce a post-hoc analysed data.frame for your fit.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for ZI.posthoc {WormTools}"><tr><td>ZI.posthoc {WormTools}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Produce a post-hoc analysed data.frame for your fit.</h2>
+
+<h3>Description</h3>
+
+<p>Produce a post-hoc analysed data.frame for your fit.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+ZI.posthoc(fit, factors, nr.factors = 2, method = "pairwise",
+  adjust = "tukey", selected.contrasts = F, contrasts)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>fit</code></td>
+<td>
+<p>The fit for which you'd like to produce a posthoc analysis. Don't forget to first run an Anova on it.</p>
+</td></tr>
+<tr valign="top"><td><code>factors</code></td>
+<td>
+<p>The factors you'd like to check contrasts for. Give a vector containing all factors.</p>
+</td></tr>
+<tr valign="top"><td><code>nr.factors</code></td>
+<td>
+<p>= 2 By default: nr.factor == 2. Chose c(1, 2, 3, 4)</p>
+</td></tr>
+<tr valign="top"><td><code>method</code></td>
+<td>
+<p>= &quot;pairwise&quot; by default. Others are possible (check ?contrast)</p>
+</td></tr>
+<tr valign="top"><td><code>adjust</code></td>
+<td>
+<p>= &quot;tukey&quot; by default. An adjustment of your p-values is usually required.</p>
+</td></tr>
+</table>
+
+
+<h3>Examples</h3>
+
+<pre>
+ZI.posthoc
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>WormTools</em> version 0.0.0.9000 <a href="00Index.html">Index</a>]</div>
+</body></html>

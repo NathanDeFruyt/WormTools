@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Symbolizing significance by asterisks</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for asterisks {WormTools}"><tr><td>asterisks {WormTools}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Symbolizing significance by asterisks</h2>
+
+<h3>Description</h3>
+
+<p>Adapted from prof. Tom Wenseleers:
+This function uses given threshold values (cutpoints) to code these in symbols (symbols)
+By default, it will annote asterisks (*) to p.value values.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+asterisks(value, cutpoints = c(0, 0.001, 0.01, 0.05, 0.1, 1),
+  symbols = c("***", "**", "*", ".", ""))
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>value</code></td>
+<td>
+<p>Here goes your data.</p>
+</td></tr>
+<tr valign="top"><td><code>cutpoints</code></td>
+<td>
+<p>Here goes a vector of cutpoints, usually one longer than the vector of thresholds</p>
+</td></tr>
+<tr valign="top"><td><code>symbols</code></td>
+<td>
+<p>Here goes a vector of symbols, one shorter than the vector of cutpoints</p>
+</td></tr>
+</table>
+
+
+<h3>Examples</h3>
+
+<pre>
+asterisks
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>WormTools</em> version 0.0.0.9000 <a href="00Index.html">Index</a>]</div>
+</body></html>

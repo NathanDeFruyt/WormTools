@@ -1,0 +1,37 @@
+ZI.match                Matching two datafiles to eachother.
+ZI.plot                 Plot in Nathan's favourite style (hint: There
+                        are options!).
+ZI.posthoc              Produce a post-hoc analysed data.frame for your
+                        fit.
+alphabet                Object: a list containing all letters of the
+                        alphabet
+asterisks               Symbolizing significance by asterisks
+binning                 Replace all NA values by a constant.
+check.learningData      Checking your learning data whether it worked
+                        or not.
+chemoindex              Calculcating the Chemotaxis index
+document.WormTools      Document and install your newly written code in
+                        one line!
+levelplot.data.microbeta
+                        Produce data for a levelplot for your receptor
+                        screen data
+load.LocomotionData     Loading data from the Locomotion Assay
+load.MultipleCsv        Loading multiple .csv files from a common
+                        folder.
+load.layout             Loading the plate layout.
+load.learningData       Loading data from the DA assay: adding a column
+                        indicating the replicate for different files
+                        from a common folder.
+load.microbeta          Loading the data from the microbeta machine.
+na.col.omit             Omitting NA values (or rows) for a specific
+                        column of your dataset
+na.replace              Replacing NA values by a constant.
+process.microbeta.data
+                        Check for hits in your screening data.
+setwd.WormTools         Set your working directory to the WormTools
+                        root directory.
+update.R                Update your R version
+update.WormTools        Update the WormTools package
+update.packages         This function will update/install a concise
+                        list of packages in R
+z.score                 Calculate the z-score.

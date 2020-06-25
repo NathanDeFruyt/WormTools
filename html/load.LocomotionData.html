@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Loading data from the Locomotion Assay</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for load.LocomotionData {WormTools}"><tr><td>load.LocomotionData {WormTools}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Loading data from the Locomotion Assay</h2>
+
+<h3>Description</h3>
+
+<p>This function allows you to quickly load all data from one mother folder in which you saved data for several experiments in subfolders. E.g. the main folder contains your data, the subfolders contain .csv files for each time a different strain in a different condition.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+load.LocomotionData(path = getwd(), folders, strains, conditions)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>path</code></td>
+<td>
+<p>Enter the path to the main folder.</p>
+</td></tr>
+<tr valign="top"><td><code>folders</code></td>
+<td>
+<p>Enter all subfolders you constituted. I'll try to find a way to do this more efficiently.</p>
+</td></tr>
+<tr valign="top"><td><code>strains</code></td>
+<td>
+<p>Enter a list of the strains you used. These should be ordered in the way you ordered the respective folders.</p>
+</td></tr>
+<tr valign="top"><td><code>conditions</code></td>
+<td>
+<p>Enter a list of again respective conditions for all folders. Mind that the order does matter a lot!</p>
+</td></tr>
+</table>
+
+
+<h3>Examples</h3>
+
+<pre>
+load.LocomotionData
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>WormTools</em> version 0.0.0.9000 <a href="00Index.html">Index</a>]</div>
+</body></html>

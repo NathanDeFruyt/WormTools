@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Loading data from the DA assay: adding a column indicating...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for load.learningData {WormTools}"><tr><td>load.learningData {WormTools}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Loading data from the DA assay: adding a column indicating the replicate for different files from a common folder.</h2>
+
+<h3>Description</h3>
+
+<p>This function allows you to quickly load all data from one mother folder in which you saved data as .csv files and afterwards still identify what data came from which file.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+load.learningData(check.learning.data = T, na.col.omit = T,
+  path = getwd(), strain = "N2", learning.phenotype = T,
+  threshold = 0.7, learning.cutpoints = c(-1, (threshold - 0.2),
+  (threshold - 0.1), (threshold - 0.05), (threshold), 1),
+  non.learning.cutpoints = c(-1, (threshold - 0.15), (threshold),
+  (threshold + 0.1), (threshold + 0.2), 1))
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>check.learning.data</code></td>
+<td>
+<p>Default = T; would you like to check whether the DA assay worked for wildtype (N2) worms and only use those datasets for whom it did?</p>
+</td></tr>
+<tr valign="top"><td><code>na.col.omit</code></td>
+<td>
+<p>Default = T; would you like to delete row from the CI column that contain NaN values? Usually these are rows for which there were no data entered.</p>
+</td></tr>
+<tr valign="top"><td><code>path</code></td>
+<td>
+<p>Default: wd; choose the path in which the function will find your learningData.</p>
+</td></tr>
+<tr valign="top"><td><code>strain</code></td>
+<td>
+<p>Default = &quot;N2&quot;; Optional if check.learning.data = T. what strain would you like to check up on? Default: N2</p>
+</td></tr>
+<tr valign="top"><td><code>learning.phenotype</code></td>
+<td>
+<p>Default = T; Optional if check.learning.data = T. Is the strain learning (true) or shouldn't it be (false)? Default: True (learning)</p>
+</td></tr>
+<tr valign="top"><td><code>threshold</code></td>
+<td>
+<p>Default = 0.7; Optional if check.learning.data = T. The threshold CI value for which the assay went well. For naive: CI &gt; threshold is good, whereas for conditioned CI &lt; threshold is better</p>
+</td></tr>
+<tr valign="top"><td><code>learning.cutpoints</code></td>
+<td>
+<p>The cutpoints you used to determine the significance of the learning phenotype</p>
+</td></tr>
+<tr valign="top"><td><code>NONE</code></td>
+<td>
+<p>Be sure to set your working directory to the folder of which you want to access the data. Your data should be formatted as follows: One column in which there is the data for the DA spot, one column in which there is the data for the EtOH spot and another column in which there is the data for all other worms. Next to this, the function requires a column that indicates the strain and a column that indicates the condition.</p>
+</td></tr>
+<tr valign="top"><td><code>nonlearning.cutpoints</code></td>
+<td>
+<p>The cutpoints you used to determine the significance of the non-learning phenotype</p>
+</td></tr>
+</table>
+
+
+<h3>Examples</h3>
+
+<pre>
+load.learningData
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>WormTools</em> version 0.0.0.9000 <a href="00Index.html">Index</a>]</div>
+</body></html>

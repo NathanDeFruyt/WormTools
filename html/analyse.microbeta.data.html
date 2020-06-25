@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Analyse your micro.beta data.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for analyse.microbeta.data {WormTools}"><tr><td>analyse.microbeta.data {WormTools}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Analyse your micro.beta data.</h2>
+
+<h3>Description</h3>
+
+<p>Using this function, you can elegantly and rather quickly scout your microbeta screen for potential hits. The outcome will be a list of several elements, including a density plot, the potential hits and a levelplot.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+analyse.microbeta.data(data, pool.plates = T, screen.type = "hit",
+  pos.control = "ATP", baseline = "BSA", norm.over.ATP = T,
+  set.to.zero = F, nr.plates = 5, plate.type = 96,
+  graph.levelplots = F, path = path,
+  levelplot.file.names = "Default", estimate.p.values = F,
+  plot.levelplots = F, p.value.distribution = c("chisq", "gamma",
+  "exp", "normal"), alpha = 0.05, plot.distr.estimate = F,
+  graph.density = F)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>data</code></td>
+<td>
+<p>Data that were loaded using load.microbeta and subsequently summarised using process.microbeta.data()</p>
+</td></tr>
+<tr valign="top"><td><code>pool.plates</code></td>
+<td>
+<p>would you like to pool the plates in your assay? IF not, you'll get one plot as output, otherwise it produces a list of several plots.</p>
+</td></tr>
+<tr valign="top"><td><code>screen.type</code></td>
+<td>
+<p>Default= wide screen.</p>
+</td></tr>
+<tr valign="top"><td><code>pos.control</code></td>
+<td>
+<p>= &quot;ATP&quot;, your positive control.</p>
+</td></tr>
+<tr valign="top"><td><code>baseline</code></td>
+<td>
+<p>= &quot;BSA&quot;, the solution in which peptides were diluted.</p>
+</td></tr>
+<tr valign="top"><td><code>norm.over.ATP</code></td>
+<td>
+<p>Default = F: Would you like to divide your values by the ATP value per plate or not?</p>
+</td></tr>
+<tr valign="top"><td><code>set.to.zero</code></td>
+<td>
+<p>Default = T: would you like to set negative z.scores to 0?</p>
+</td></tr>
+<tr valign="top"><td><code>nr.plates</code></td>
+<td>
+<p>The number of plates you screened.</p>
+</td></tr>
+<tr valign="top"><td><code>plate.type</code></td>
+<td>
+<p>The type of plates you used (i.e. e.g. 96 wells)</p>
+</td></tr>
+<tr valign="top"><td><code>graph.levelplots</code></td>
+<td>
+<p>Default: F; If T: writes a levelplot graph to the specified location in path</p>
+</td></tr>
+<tr valign="top"><td><code>path</code></td>
+<td>
+<p>If you opted to write graphs to ppt: where should the file go?</p>
+</td></tr>
+<tr valign="top"><td><code>levelplot.file.names</code></td>
+<td>
+<p>Default: 'Levelplot Plate 1', 2, 3, ... If graph2ppt: how should you like to call your files?</p>
+</td></tr>
+<tr valign="top"><td><code>estimate.p.values</code></td>
+<td>
+<p>Default = F: Would you like to estimate p.values?</p>
+</td></tr>
+<tr valign="top"><td><code>plot.levelplots</code></td>
+<td>
+<p>If T: levelplots are plotted, this can take a while</p>
+</td></tr>
+<tr valign="top"><td><code>p.value.distribution</code></td>
+<td>
+<p>No Default: what distribution do you think you'r data has?</p>
+</td></tr>
+<tr valign="top"><td><code>alpha</code></td>
+<td>
+<p>What alpha value would you like to identify hits on?</p>
+</td></tr>
+<tr valign="top"><td><code>plot.distr.estimate</code></td>
+<td>
+<p>Default = F; Would you like to plot the estimated distribution of your data?</p>
+</td></tr>
+<tr valign="top"><td><code>graph.density</code></td>
+<td>
+<p>Default = F; Woudl you like to write the density curve to a file?</p>
+</td></tr>
+</table>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+analyse.microbeta.data
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>WormTools</em> version 0.0.0.9000 <a href="00Index.html">Index</a>]</div>
+</body></html>

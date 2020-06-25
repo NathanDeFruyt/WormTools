@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Replace all NA values by a constant.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for binning {WormTools}"><tr><td>binning {WormTools}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Replace all NA values by a constant.</h2>
+
+<h3>Description</h3>
+
+<p>This function enables you to replace all NA values by a constant.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+binning(data, binrange, set_bins = "automatic", manual_bins = c())
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>data</code></td>
+<td>
+<p>Here you put the data for which you like to replace it by bins.</p>
+</td></tr>
+<tr valign="top"><td><code>binrange</code></td>
+<td>
+<p>Here you put the range that the bins should span. E.g. if you want to put bins for years, you can chose 5 years and that'll give you bins of five years wide.</p>
+</td></tr>
+<tr valign="top"><td><code>set_bins</code></td>
+<td>
+<p>Optinoal argument: 'automatic', or 'manual'; Default: 'automatic'. If you like to set bins manually, select manual.</p>
+</td></tr>
+<tr valign="top"><td><code>manual_bins</code></td>
+<td>
+<p>Here goes a vector with the bins you'd like. If you already selected automatic, this argument is optional.</p>
+</td></tr>
+</table>
+
+
+<h3>Examples</h3>
+
+<pre>
+binning
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>WormTools</em> version 0.0.0.9000 <a href="00Index.html">Index</a>]</div>
+</body></html>
